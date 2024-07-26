@@ -1,0 +1,133 @@
+@charset "utf-8";
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #F4F4F4; /* Background color */
+    color: #333333; /* Text color */
+}
+
+header {
+    background-color: #FFFFFF; /* Card background */
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #DDDDDD; /* Border color */
+}
+
+header h1 {
+    color: #FF6F61; /* Main color */
+    font-family: 'Arial Black', sans-serif; /* Heading font */
+    font-weight: bold;
+    font-size: 2rem; /* Heading size */
+}
+
+main {
+    padding: 1rem;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.item {
+    background-color: #FFFFFF; /* Card background */
+    border: 1px solid #DDDDDD; /* Border color */
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    flex: 1 1 calc(25% - 1rem); /* Responsive item sizing */
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #DDDDDD; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.item h3 {
+    margin: 0.5rem 0;
+    color: #333333; /* Text color */
+    font-family: 'Arial Black', sans-serif; /* Heading font */
+    font-weight: bold;
+    font-size: 1.25rem; /* Heading size */
+}
+
+.item p {
+    color: #666666; /* Muted text color */
+}
+
+.datepicker {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#datepicker {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #DDDDDD; /* Border color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+footer {
+    background-color: #FFFFFF; /* Card background */
+    padding: 1rem;
+    text-align: center;
+    border-top: 2px solid #DDDDDD; /* Border color */
+}
+
+footer p {
+    color: #777777; /* Muted text color */
+}
+
+/* Button styles */
+button {
+    background-color: #FF6F61; /* Main color */
+    color: #FFFFFF; /* Button text color */
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-family: 'Arial Black', sans-serif; /* Heading font */
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+button:hover {
+    background-color: #FFC107; /* Hover color */
+}
+
+/* Link styles */
+a {
+    color: #FF6F61; /* Main color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFC107; /* Hover color */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .item {
+        flex: 1 1 calc(50% - 1rem); /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        flex: 1 1 100%; /* Single column on small screens */
+    }
+}
+
+
